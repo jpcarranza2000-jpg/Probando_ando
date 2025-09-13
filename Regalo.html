@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Un regalo para ti — Girasoles 🌻</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    *::after,
+    *::before {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    :root {
+      --dark-color: #222121;
+      --text: #c62e2e;
+    }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+      overflow: hidden;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+    }
+
+    body {
+      display: flex;
+      align-items: center; 
+      justify-content: center; 
+      background-color: var(--dark-color);
+    }
+
+    .card {
+      background: rgba(255, 255, 255, 0.9);
+      border-radius: 14px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+      padding: 28px;
+      text-align: center;
+      width: min(720px, 90%);
+    }
+
+    h1 {
+      margin: 0 0 12px 0;
+      color: var(--text);
+      font-size: 1.6rem;
+    }
+
+    p {
+      color: #6b4b4b;
+      margin: 0 0 18px 0;
+      line-height: 1.4;
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(180deg, #ffd84d, #ffbf00);
+      color: #2b2b2b;
+      padding: 12px 20px;
+      border-radius: 30px;
+      font-weight: 700;
+      text-decoration: none;
+      box-shadow: 0 6px 18px rgba(255,188,0,0.18);
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(255,188,0,0.22);
+    }
+
+    .emoji {
+      font-size: 48px;
+      display: block;
+      margin-bottom: 12px;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="card" id="mensaje">
+    <div class="emoji">🌻🌻</div>
+    <h1>Ya que no sé si alguien te dio flores...</h1>
+    <p>— Aquí tienes un pequeño regalo: 💛</p>
+    <button class="btn" onclick="window.location.href='index.html'">Abrir tus flores 🌻</button>
+  </div>
+</body>
+</html>
